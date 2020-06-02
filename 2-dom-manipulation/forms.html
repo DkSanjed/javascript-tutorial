@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend><strong>Please enter your contact details</strong></legend>
+                <div>
+                    <label for="Name"><strong>Your name (required):</strong></label>
+                    <input type="text" id="Name" name="user_name" aria-label="required">
+                    <abbr title="required"></abbr>
+                </div>
+                <div>
+                    <label for="Email"><strong>E-Mail address (required):</strong> </label>
+                    <input id="Email" name="user_email" aria-label="required">
+                    <abbr title="required"></abbr>
+                </div>
+                <div>
+                    <label for="Phone"><strong>Phone number (+57) (optional):</strong> </label>
+                    <input id="Phone" name="user_number">
+                </div>
+            </fieldset>
+            <fieldset id="checkbox_id">
+                <legend><strong>Please select the courses that you are interested in (required)</strong></legend>
+                <div>
+                    <input type="checkbox" id="webDeveloper" name="course1" value="Web Developer">
+                    <label for="webDeveloper"> <strong>Web Developer</strong></label>                    
+                </div>
+                <div>
+                    <input type="checkbox" id="reactDeveloper" name="course2" value="React Developer">
+                    <label for="reactDeveloper"> <strong>React Developer</strong></label>                    
+                </div>
+                <div>
+                    <input type="checkbox" id="fullStack" name="course3" value="Fullstack Developer">
+                    <label for="fullStack"> <strong>Fullstack Developer</strong></label>                    
+                </div>
+                <div>
+                    <input type="checkbox" id="other" name="course4" value="Other">
+                    <label for="other"> <strong>Other</strong></label>                    
+                </div>
+            </fieldset>
+            <div>
+                <label for="textArea"><strong>Please enter a message (optional):</strong></label>
+            </div>
+            <div>
+                <textarea name="text" id="textArea" cols="50" rows="10"></textarea>
+            </div>
+            <button id="Button_submit">Send message</button>
+            <button type="reset">Reset form</button>
+        </form>
+        <p id="print_name">Name:</p>
+        <p id="print_email">Email:</p>
+        <p id="print_number">Number:</p>
+        <p id="print_checkbox">Checkbox:</p>
+        <script src="form.js"></script>
+    </main>
+</body>
+</html>
